@@ -1,0 +1,445 @@
+.duv-detail {
+  animation: fadeIn 0.6s ease-in;
+}
+
+/* Header da DUV */
+.duv-header {
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border: 1px solid #e2e8f0;
+}
+
+.duv-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.duv-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.duv-subtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.duv-meta {
+  display: flex;
+  gap: 2rem;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.meta-label {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.meta-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Seção do Navio */
+.navio-info {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.navio-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navio-image-container {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f3f4f6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.navio-image:hover {
+  transform: scale(1.05);
+}
+
+.navio-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.navio-info-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-label {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flag-icon {
+  font-size: 1.2rem;
+}
+
+/* Seção de Pessoas */
+.pessoas-section {
+  margin-bottom: 2rem;
+}
+
+.pessoas-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  min-width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-card.total {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  border-color: #3b82f6;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.stat-card.total .stat-number {
+  color: white;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.stat-card.total .stat-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Listas de Pessoas */
+.pessoas-lists {
+  display: grid;
+  gap: 2rem;
+}
+
+.pessoas-list {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.pessoas-list.tripulante {
+  border-left: 4px solid #059669;
+}
+
+.pessoas-list.passageiro {
+  border-left: 4px solid #3b82f6;
+}
+
+.pessoas-list-header {
+  margin-bottom: 1.5rem;
+}
+
+.pessoas-list-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.title-icon {
+  font-size: 1.5rem;
+}
+
+.count-badge {
+  background-color: #e5e7eb;
+  color: #374151;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.pessoas-list.tripulante .count-badge {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.pessoas-list.passageiro .count-badge {
+  background-color: #dbeafe;
+  color: #3b82f6;
+}
+
+.pessoas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* Cards de Pessoa */
+.pessoa-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.pessoa-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pessoa-card.tripulante:hover {
+  border-color: #059669;
+}
+
+.pessoa-card.passageiro:hover {
+  border-color: #3b82f6;
+}
+
+.pessoa-avatar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.avatar-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pessoa-type-badge {
+  position: absolute;
+  bottom: -5px;
+  right: calc(50% - 40px);
+  background: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pessoa-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.pessoa-details {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-label {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.detail-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.detail-value.sid {
+  font-family: 'Courier New', monospace;
+  background-color: #e5e7eb;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.type-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.type-badge.tripulante {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.type-badge.passageiro {
+  background-color: #dbeafe;
+  color: #3b82f6;
+}
+
+/* Estados vazios e de erro */
+.empty-pessoas {
+  text-align: center;
+  padding: 3rem;
+  color: #64748b;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px dashed #cbd5e1;
+}
+
+.not-found,
+.error {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .duv-header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .duv-meta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navio-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .navio-image-container {
+    height: 200px;
+  }
+  
+  .pessoas-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pessoas-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .duv-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .duv-title {
+    font-size: 1.75rem;
+  }
+  
+  .navio-image-container {
+    height: 150px;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+  }
+}

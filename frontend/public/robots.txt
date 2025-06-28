@@ -1,0 +1,97 @@
+# Robots.txt para DUV System
+# Sistema de Gerenciamento de Documentos Únicos Virtuais
+
+# Permitir todos os bots para páginas públicas
+User-agent: *
+Allow: /
+
+# Páginas específicas permitidas
+Allow: /static/
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Desabilitar acesso a arquivos sensíveis (caso existam)
+Disallow: /api/
+Disallow: /.env
+Disallow: /config/
+Disallow: /logs/
+Disallow: /admin/
+Disallow: /private/
+
+# Arquivos específicos bloqueados
+Disallow: /*.json$
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /node_modules/
+
+# Permitir acesso aos manifestos PWA
+Allow: /manifest.json
+Allow: /service-worker.js
+Allow: /sw.js
+
+# Configurações específicas para bots comuns
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 5
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 3
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Bloquear bots maliciosos conhecidos
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Sitemap location (substitua pela URL real quando em produção)
+# Sitemap: https://seu-dominio.com/sitemap.xml
+
+# Host (descomente e ajuste quando em produção)
+# Host: https://seu-dominio.com
+
+# Informações adicionais
+# Este é um sistema de gerenciamento de DUVs (Documentos Únicos Virtuais)
+# Para mais informações, visite: https://seu-dominio.com
+
+# Última atualização: 2025-06-28
